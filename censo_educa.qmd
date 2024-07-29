@@ -116,9 +116,9 @@ data_matriculas %>%
 ```{r}
 data_matriculas %>%
   ggplot() +
-    geom_line(aes(x = nu_ano_censo, y = total_matriculas_medio)) +
-    geom_point(aes(x = nu_ano_censo, y = total_matriculas_medio)) +
-    scale_y_continuous(limits = c(4500, 7250)) +
+    geom_line(aes(x = nu_ano_censo, y = total_matriculas_fundamental)) +
+    geom_point(aes(x = nu_ano_censo, y = total_matriculas_fundamental)) +
+    scale_y_continuous(limits = c(20000,30000)) +
     scale_x_continuous(n.breaks = 12) +
     theme_bw() +
     labs(
